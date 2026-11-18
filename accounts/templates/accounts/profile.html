@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль - MoodDiary</title>
+</head>
+<body>
+    <h2>Личный кабинет</h2>
+    
+    <p>Привет, <strong>{{ user.username }}</strong>!</p>
+    <p>Твоя роль: {{ user.role }}</p>
+    
+    <hr>
+    <a href="{% url 'logout' %}">Выйти из системы</a>
+</body>
+</html>
